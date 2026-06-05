@@ -106,29 +106,28 @@
 </head>
 <body class="bg-background text-on-background font-body-md text-body-md antialiased selection:bg-secondary selection:text-on-secondary">
 <!-- TopNavBar -->
-<nav class="bg-surface-container-lowest dark:bg-primary w-full top-0 sticky z-50 border-b border-outline-variant dark:border-primary-container shadow-sm">
+<nav class="w-full top-0 sticky z-50 border-b border-transparent transition-all duration-500 bg-surface-container-lowest" id="main-nav">
 <div class="flex justify-between items-center px-gutter py-4 max-w-container-max mx-auto">
-<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">
+<a class="font-headline-md text-headline-lg-mobile font-bold text-primary flex items-center gap-2 transition-transform hover:scale-105" href="index.html">
+<span class="material-symbols-outlined text-secondary animate-pulse" style="font-variation-settings: 'FILL' 1;">local_pharmacy</span>
                 iMED Herbal Clinic
-            </div>
-<div class="hidden md:flex space-x-6 items-center">
-<a class="text-on-surface-variant dark:text-on-primary-fixed-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300 cursor-pointer active:scale-95 font-body-md text-body-md" href="#">Home</a>
-<a class="text-on-surface-variant dark:text-on-primary-fixed-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300 cursor-pointer active:scale-95 font-body-md text-body-md" href="#">Treatments</a>
-<a class="text-on-surface-variant dark:text-on-primary-fixed-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300 cursor-pointer active:scale-95 font-body-md text-body-md" href="#">Laboratory</a>
-<a class="text-on-surface-variant dark:text-on-primary-fixed-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300 cursor-pointer active:scale-95 font-body-md text-body-md" href="#">Pharmacy</a>
-<a class="text-on-surface-variant dark:text-on-primary-fixed-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300 cursor-pointer active:scale-95 font-body-md text-body-md" href="#">Contact</a>
+            </a>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-secondary transition-colors duration-300 uppercase" href="index.html">Home</a>
+<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-secondary transition-colors duration-300 uppercase" href="services.html">Services</a>
+<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-secondary transition-colors duration-300 uppercase" href="products.html">Products</a>
+<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-secondary transition-colors duration-300 uppercase" href="gallery.html">Gallery</a>
+<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-secondary transition-colors duration-300 uppercase" href="about.html">About</a>
 </div>
-<div class="flex items-center space-x-4">
-<button class="bg-primary text-on-primary font-title-md text-title-md px-6 py-2 rounded transition-transform active:scale-95 hidden md:block">
-                    Book Appointment
-                </button>
-<button class="md:hidden text-primary">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+<button class="bg-secondary text-on-secondary px-6 py-2 rounded-md font-label-caps text-label-caps hover:bg-secondary-container hover:text-on-secondary-container transition-all duration-300 hidden md:block cursor-pointer active:scale-95 hover:shadow-lg hover:-translate-y-0.5 uppercase">
+                <a href="services.html" class="text-white no-underline">Book Appointment</a>
+            </button>
+<button class="md:hidden text-primary hover:text-secondary transition-colors">
+<span class="material-symbols-outlined">menu</span>
 </button>
 </div>
-</div>
 </nav>
-<main class="max-w-container-max mx-auto px-gutter py-margin-desktop space-y-24">
+<main class="flex-grow max-w-container-max mx-auto px-gutter py-margin-desktop space-y-24">
 <!-- Header -->
 <header class="text-center max-w-3xl mx-auto space-y-6">
 <h1 class="font-display-lg text-display-lg md:text-display-lg text-primary">Clinical Insights &amp; Research</h1>
