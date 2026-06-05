@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>iMED Herbal Clinic | Modern Evidence-Based Phytomedicine</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1;
+        }
+        
+        /* Hide scrollbar for clean carousel */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        /* Scroll Animations */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .animate-on-scroll.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .slide-in-right {
+            opacity: 0;
+            transform: translateX(32px);
+            transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .slide-in-right.is-visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .delay-100 { transition-delay: 100ms; }
+        .delay-200 { transition-delay: 200ms; }
+    </style>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "tertiary-fixed": "#6bfe9c",
+                "surface-container-highest": "#e1e3e4",
+                "surface": "#f8f9fa",
+                "surface-container-lowest": "#ffffff",
+                "secondary-fixed-dim": "#ffafd5",
+                "surface-tint": "#4b53bc",
+                "surface-variant": "#e1e3e4",
+                "secondary": "#b4007d",
+                "background": "#f8f9fa",
+                "error": "#ba1a1a",
+                "on-secondary": "#ffffff",
+                "on-primary-fixed-variant": "#3239a3",
+                "on-tertiary-fixed-variant": "#005228",
+                "secondary-fixed": "#ffd8e8",
+                "tertiary-container": "#002810",
+                "error-container": "#ffdad6",
+                "inverse-surface": "#2e3132",
+                "on-background": "#191c1d",
+                "on-primary-fixed": "#00006e",
+                "on-secondary-container": "#5a003d",
+                "inverse-primary": "#bfc2ff",
+                "on-secondary-fixed-variant": "#8a005f",
+                "inverse-on-surface": "#f0f1f2",
+                "outline-variant": "#c6c5d5",
+                "tertiary": "#000e04",
+                "on-surface": "#191c1d",
+                "surface-dim": "#d9dadb",
+                "surface-container-low": "#f3f4f5",
+                "on-primary": "#ffffff",
+                "primary": "#00003c",
+                "surface-container-high": "#e7e8e9",
+                "on-error": "#ffffff",
+                "on-tertiary-fixed": "#00210c",
+                "outline": "#767684",
+                "on-surface-variant": "#464653",
+                "on-tertiary-container": "#009e52",
+                "secondary-container": "#fe48b8",
+                "on-error-container": "#93000a",
+                "surface-container": "#edeeef",
+                "primary-container": "#000080",
+                "on-primary-container": "#777eea",
+                "tertiary-fixed-dim": "#4ae183",
+                "surface-bright": "#f8f9fa",
+                "on-tertiary": "#ffffff",
+                "on-secondary-fixed": "#3d0027",
+                "primary-fixed-dim": "#bfc2ff",
+                "primary-fixed": "#e0e0ff"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "margin-mobile": "16px",
+                "gutter": "24px",
+                "unit": "4px",
+                "margin-desktop": "64px",
+                "container-max": "1280px"
+        },
+        "fontFamily": {
+                "display-lg": [
+                        "Manrope"
+                ],
+                "headline-lg": [
+                        "Manrope"
+                ],
+                "body-md": [
+                        "Inter"
+                ],
+                "label-caps": [
+                        "JetBrains Mono"
+                ],
+                "title-md": [
+                        "Manrope"
+                ],
+                "body-lg": [
+                        "Inter"
+                ],
+                "headline-lg-mobile": [
+                        "Manrope"
+                ]
+        },
+        "fontSize": {
+                "display-lg": [
+                        "48px",
+                        {
+                                "lineHeight": "56px",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "800"
+                        }
+                ],
+                "headline-lg": [
+                        "32px",
+                        {
+                                "lineHeight": "40px",
+                                "fontWeight": "700"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "24px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "label-caps": [
+                        "12px",
+                        {
+                                "lineHeight": "16px",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "title-md": [
+                        "20px",
+                        {
+                                "lineHeight": "28px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "28px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-lg-mobile": [
+                        "24px",
+                        {
+                                "lineHeight": "32px",
+                                "fontWeight": "700"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface-container-lowest text-on-background font-body-md antialiased pt-[72px] pb-[72px]">
+<!-- Top Navigation (Mobile Version) -->
+<header class="bg-surface-container-lowest/90 backdrop-blur-md dark:bg-primary/90 w-full top-0 sticky shadow-sm z-50 transition-all duration-300" id="top-nav">
+<div class="flex justify-between items-center px-gutter py-4 max-w-container-max mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary fill text-[32px]">biotech</span>
+<span class="font-title-md text-title-md font-bold text-primary dark:text-primary-fixed tracking-tight">iMED</span>
+</div>
+<div class="flex items-center gap-4">
+<button class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center active:scale-90 transition-transform duration-200">
+<span class="material-symbols-outlined">call</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Mobile Hero Section -->
+<section class="relative w-full overflow-hidden bg-primary text-on-primary py-12 px-gutter flex flex-col items-start gap-8 min-h-[751px] justify-center" data-alt="A professional modern clinic setting with soft lighting, featuring a knowledgeable male doctor in a white coat smiling confidently. The background is a clean, bright medical office with subtle green herbal elements indicating a natural approach to medicine. The overall aesthetic is trustworthy, modern, and clinical yet welcoming." style="background-image: linear-gradient(to bottom right, rgba(0, 0, 60, 0.95), rgba(0, 0, 128, 0.8)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuA4SLGl7u66g_C_5DnH-mRq2vFkdOQRaPzgTnexpMCMY8ipTOnJ8NeM-LJR4Zwg9IPZWTUALM8GLhUN16i5_QHsD8ZKpUAQSk6c-ucL9fCZoRQeo3_5LFiCbteMMyMyHf4eOmkC8tYpms_sfBP_uPBwZYOsKiDu_6kyPuZCSbCDWMQwf4nwWAIXu1Xbv6nERotPqqjK6kAEr0PKJqj4R-koJSjeNHpm-dQNYTs8DR70rAjU7NrlFgFzehqUQRRJuWc6GaF5oqor-e4'); background-size: cover; background-position: center;">
+<div class="z-10 flex flex-col gap-4 max-w-[90%] animate-on-scroll">
+<div class="inline-flex items-center gap-2 bg-secondary-container/20 px-3 py-1.5 rounded-full border border-secondary-container/30 w-fit backdrop-blur-sm">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed"></span>
+<span class="font-label-caps text-label-caps text-secondary-fixed uppercase">Clinical Diagnostics</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-primary font-bold leading-tight">
+                Modern Clinical Excellence Rooted in Nature.
+            </h1>
+<p class="font-body-lg text-body-lg text-primary-fixed-dim opacity-90">
+                Bridging traditional wisdom with rigorous laboratory validation for precise, effective treatments.
+            </p>
+</div>
+<div class="z-10 flex flex-col w-full gap-2 mt-4 animate-on-scroll delay-100">
+<button class="w-full bg-secondary text-on-secondary py-4 rounded-lg font-label-caps text-label-caps font-semibold shadow-lg active:scale-95 transition-all duration-200 flex items-center justify-center gap-2 uppercase">
+<span class="material-symbols-outlined">event_available</span>
+                Book Appointment
+            </button>
+<button class="w-full bg-surface-container-lowest/10 text-on-primary border border-surface-container-lowest/30 py-4 rounded-lg font-label-caps text-label-caps font-semibold backdrop-blur-md active:scale-95 transition-all duration-200 flex items-center justify-center gap-2 uppercase">
+<span class="material-symbols-outlined">science</span>
+                Our Laboratory
+            </button>
+</div>
+<!-- Decorative subtle pattern overlay -->
+<div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 32px 32px;"></div>
+</section>
+<!-- Key Stats / Diagnostic First Banner -->
+<section class="bg-surface-container-lowest px-gutter py-12">
+<div class="bg-surface-container-low rounded-xl shadow-sm border border-outline-variant p-6 flex flex-col gap-4 relative overflow-hidden animate-on-scroll">
+<div class="absolute top-0 right-0 w-32 h-32 bg-secondary/5 rounded-bl-full -z-0"></div>
+<div class="flex items-center gap-3 z-10">
+<div class="w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined fill">biotech</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-primary text-lg">Diagnostic-First Approach</h3>
+<p class="font-label-caps text-label-caps text-on-surface-variant uppercase mt-1">Mandatory Biochemical Screening</p>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 z-10 leading-relaxed">
+                Herbal interventions monitored by Liver &amp; Renal Function Tests to ensure safety and precision.
+            </p>
+<div class="mt-4 z-10 bg-surface-container-lowest rounded-lg p-4 border border-outline-variant">
+<h4 class="font-label-caps text-label-caps text-primary uppercase mb-3">Core Laboratory Investigations</h4>
+<ul class="flex flex-col gap-3">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-lg mt-0.5">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Kidney/Liver Function</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-lg mt-0.5">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Complete Blood Count</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-lg mt-0.5">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Metabolic Panels</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Treatments Carousel (Mobile Optimized) -->
+<section class="py-12 bg-surface-container-lowest overflow-hidden flex flex-col gap-8">
+<div class="px-gutter flex justify-between items-end animate-on-scroll">
+<div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold">Specialized Care</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Managing chronic conditions effectively.</p>
+</div>
+<a class="font-label-caps text-label-caps text-secondary flex items-center active:scale-95 transition-transform duration-200 uppercase" href="#">See all <span class="material-symbols-outlined text-sm ml-1">arrow_forward</span></a>
+</div>
+<!-- Swipeable Row -->
+<div class="flex overflow-x-auto gap-4 px-gutter pb-6 no-scrollbar snap-x snap-mandatory slide-in-right">
+<!-- Card 1 -->
+<div class="min-w-[280px] bg-surface-container-low rounded-xl shadow-sm border border-outline-variant p-6 snap-center flex flex-col gap-4 relative active:scale-[0.98] transition-transform duration-200">
+<div class="absolute top-4 right-4 text-secondary bg-secondary-fixed px-2 py-1 rounded text-xs font-label-caps uppercase">Critical Care</div>
+<div class="w-14 h-14 rounded-full overflow-hidden border-2 border-surface-container bg-surface-container-lowest flex items-center justify-center shrink-0">
+<img class="w-full h-full object-cover" data-alt="A stylized, modern 3D illustration of human kidneys glowing slightly to indicate health and vitality. The background is a soft clinical white, emphasizing a medical focus on nephrology. Colors should be deep reds and soft pinks, contrasting with the clinical setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFOSXuSmDRuvcTdY-DgYQsTQ7Sdnt992ynxqp1b-XuwBFBOJ1ZJtxUV8W5CRzaJtBp7W4EodiauCFFpycpNfOgNqG7r41pCsjUQkHsUDApJznP6YHfRkQxORYYO6XK6cutJ8jFoauY-AtEK6G7L_CyiIlMCcbeKYlSa7BzQDKLtT74mLJ0W8G-aBuRNqHK9UZ514A0wTlEtweltPyiYPil8qbFXXer3l8DgAkTG2VPOnlOefA6-HAz6K_k7O_uxCZ8SL2c5a1dvJ4"/>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-primary text-xl mb-2">Kidney Disease</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Early-stage CKD management using nephro-protective herbs with rigorous tracking.</p>
+</div>
+<ul class="flex flex-col gap-2 mt-auto pt-4 border-t border-outline-variant/50">
+<li class="flex items-center gap-2 font-label-caps text-[10px] text-on-surface-variant uppercase">
+<span class="material-symbols-outlined text-[16px] text-secondary">monitoring</span> RFT Monitoring Required
+                    </li>
+<li class="flex items-center gap-2 font-body-md text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span> Phyllanthus niruri
+                    </li>
+</ul>
+</div>
+<!-- Card 2 -->
+<div class="min-w-[280px] bg-surface-container-low rounded-xl shadow-sm border border-outline-variant p-6 snap-center flex flex-col gap-4 active:scale-[0.98] transition-transform duration-200">
+<div class="w-14 h-14 rounded-full overflow-hidden border-2 border-surface-container bg-surface-container-lowest flex items-center justify-center shrink-0">
+<img class="w-full h-full object-cover" data-alt="A close up of medical equipment for blood testing, specifically focusing on diabetes management with a subtle green herbal leaf placed next to it to symbolize integrative medicine. Lighting is bright, clean, and professional." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkqb_3g6YrruEUKyogkIcckJZMibc4p11EplaDzyL5aa_zwjTuGMMUqSBC_5S3VZeyW4rJT6hvwT99VrLgfnxt_sOseCe5DN35VWR1OpzZuxN8fp6VVuOtoLWXmzxb216r9limhUIc6Efhdzee1VMorbvifSDLEnBTUn2qdC2BhPm0VdbZhPUjxyDlR94mXAINhJIcTWGHdV6Zbfo35z8JLj8oS9LDkZ-tJCv747ff0seHW-KTqq0H7eIcCWBR9q8O9A1Nn6WBh44"/>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-primary text-xl mb-2">Diabetes Mgmt</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Type 2 management via insulin-sensitizing herbs and continuous monitoring.</p>
+</div>
+<ul class="flex flex-col gap-2 mt-auto pt-4 border-t border-outline-variant/50">
+<li class="flex items-center gap-2 font-label-caps text-[10px] text-on-surface-variant uppercase">
+<span class="material-symbols-outlined text-[16px] text-secondary">monitoring</span> HbA1c Tracking Required
+                    </li>
+<li class="flex items-center gap-2 font-body-md text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span> Momordica charantia
+                    </li>
+</ul>
+</div>
+<!-- Card 3 -->
+<div class="min-w-[280px] bg-surface-container-low rounded-xl shadow-sm border border-outline-variant p-6 snap-center flex flex-col gap-4 active:scale-[0.98] transition-transform duration-200">
+<div class="w-14 h-14 rounded-full overflow-hidden border-2 border-surface-container bg-surface-container-lowest flex items-center justify-center shrink-0">
+<img class="w-full h-full object-cover" data-alt="A conceptual image showing a healthy human heart graphic on a digital display in a modern clinical setting. The screen glows blue against a stark white background, conveying advanced cardiovascular care and modern medical technology." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvM0OcCaTnn-lLbdPnC8dqjxo-9VEF1WKvCUCS0e4v4HiOro2Bu5-5QFxOUHdT7SFo94Q6TCqcAr9OeSBjRMWV36tNrZlDZs3S_dZkNVeh7U5-AWzNg4FI0n3PcOVgIwgJExBaHHGCTuDJIB-vIdfaL2qy55PM3oYNix9tpXXkUrexUAN0n0aB_WQQvjL10kyiyockQ2VJJXlHZgHmJR8V7uYwdPfc4ew35JUgZC4meXdjXOivsz7c1-PuqV6-mXOzAaqIYdZphCM"/>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-primary text-xl mb-2">Hypertension</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Vascular integrity focus with vasodilatory plants to support healthy blood pressure.</p>
+</div>
+<ul class="flex flex-col gap-2 mt-auto pt-4 border-t border-outline-variant/50">
+<li class="flex items-center gap-2 font-label-caps text-[10px] text-on-surface-variant uppercase">
+<span class="material-symbols-outlined text-[16px] text-secondary">monitoring</span> Lipid Profile Required
+                    </li>
+<li class="flex items-center gap-2 font-body-md text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span> Hibiscus sabdariffa
+                    </li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Bottom Navigation Shell -->
+<nav class="fixed bottom-0 w-full bg-surface-container-lowest/80 backdrop-blur-xl border-t border-outline-variant/30 px-2 py-3 pb-safe z-50 flex justify-around items-center shadow-[0_-4px_20px_rgba(0,0,0,0.05)]">
+<a class="flex flex-col items-center gap-1 text-primary dark:text-primary-fixed font-bold min-w-[64px] px-2 py-1 rounded-lg active:scale-90 transition-transform duration-200" href="#">
+<div class="bg-primary-container/20 px-4 py-1 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined fill text-primary">home</span>
+</div>
+<span class="font-label-caps text-[10px] text-primary uppercase">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant dark:text-on-primary-fixed-variant min-w-[64px] px-2 py-1 active:scale-90 transition-transform duration-200" href="#">
+<div class="px-4 py-1 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined">medical_services</span>
+</div>
+<span class="font-label-caps text-[10px] uppercase">Treatments</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant dark:text-on-primary-fixed-variant min-w-[64px] px-2 py-1 active:scale-90 transition-transform duration-200" href="#">
+<div class="px-4 py-1 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined">science</span>
+</div>
+<span class="font-label-caps text-[10px] uppercase">Laboratory</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant dark:text-on-primary-fixed-variant min-w-[64px] px-2 py-1 active:scale-90 transition-transform duration-200" href="#">
+<div class="px-4 py-1 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined">contact_support</span>
+</div>
+<span class="font-label-caps text-[10px] uppercase">Contact</span>
+</a>
+</nav>
+<!-- Intersection Observer Script for Scroll Animations -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.15
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target); // Only animate once
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-on-scroll, .slide-in-right').forEach(el => {
+            observer.observe(el);
+        });
+    });
+</script>
+<!-- Safe area padding for bottom nav on newer iPhones -->
+<style>
+        .pb-safe { padding-bottom: env(safe-area-inset-bottom, 12px); }
+    </style>
+</body></html>

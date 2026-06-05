@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>iMED Herbal Clinic - Health Products &amp; Supplements</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=JetBrains+Mono:wght@700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary": "#000e04",
+                        "outline-variant": "#c6c5d5",
+                        "on-secondary-fixed-variant": "#8a005f",
+                        "inverse-on-surface": "#f0f1f2",
+                        "on-primary": "#ffffff",
+                        "surface-container-low": "#f3f4f5",
+                        "surface-dim": "#d9dadb",
+                        "on-surface": "#191c1d",
+                        "on-tertiary-fixed": "#00210c",
+                        "surface-container-high": "#e7e8e9",
+                        "primary": "#00003c",
+                        "on-error": "#ffffff",
+                        "on-surface-variant": "#464653",
+                        "outline": "#767684",
+                        "secondary-container": "#fe48b8",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-container": "#009e52",
+                        "primary-container": "#000080",
+                        "surface-container": "#edeeef",
+                        "surface-bright": "#f8f9fa",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed": "#3d0027",
+                        "tertiary-fixed-dim": "#4ae183",
+                        "on-primary-container": "#777eea",
+                        "primary-fixed": "#e0e0ff",
+                        "primary-fixed-dim": "#bfc2ff",
+                        "surface-container-lowest": "#ffffff",
+                        "surface": "#f8f9fa",
+                        "tertiary-fixed": "#6bfe9c",
+                        "surface-container-highest": "#e1e3e4",
+                        "surface-tint": "#4b53bc",
+                        "secondary-fixed-dim": "#ffafd5",
+                        "secondary": "#b4007d",
+                        "background": "#f8f9fa",
+                        "surface-variant": "#e1e3e4",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed-variant": "#3239a3",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-container": "#5a003d",
+                        "on-primary-fixed": "#00006e",
+                        "on-background": "#191c1d",
+                        "inverse-surface": "#2e3132",
+                        "error-container": "#ffdad6",
+                        "tertiary-container": "#002810",
+                        "secondary-fixed": "#ffd8e8",
+                        "on-tertiary-fixed-variant": "#005228",
+                        "inverse-primary": "#bfc2ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "4px",
+                        "margin-desktop": "64px",
+                        "container-max": "1280px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Manrope"],
+                        "body-lg": ["Inter"],
+                        "title-md": ["Manrope"],
+                        "label-caps": ["JetBrains Mono"],
+                        "body-md": ["Inter"],
+                        "headline-lg": ["Manrope"],
+                        "display-lg": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "title-md": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+        }
+        .diagnostic-card {
+            border-left: 4px solid theme('colors.secondary-container');
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="bg-surface-container-lowest dark:bg-primary w-full top-0 sticky border-b border-outline-variant dark:border-primary-container shadow-sm z-50">
+<div class="flex justify-between items-center px-gutter py-4 max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">
+                iMED Herbal Clinic
+            </div>
+<div class="hidden md:flex space-x-6 items-center">
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-primary-fixed-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300 cursor-pointer active:scale-95" href="#">Home</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-primary-fixed-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300 cursor-pointer active:scale-95" href="#">Treatments</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-primary-fixed-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300 cursor-pointer active:scale-95" href="#">Laboratory</a>
+<a class="font-label-md text-label-md text-secondary dark:text-secondary-fixed font-bold border-b-2 border-secondary cursor-pointer active:scale-95" href="#">Pharmacy</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-on-primary-fixed-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300 cursor-pointer active:scale-95" href="#">Contact</a>
+</div>
+<div class="flex items-center space-x-4">
+<span class="material-symbols-outlined text-primary cursor-pointer hover:text-secondary transition-colors" data-icon="search">search</span>
+<button class="bg-primary text-on-primary px-6 py-2 rounded font-label-caps hover:bg-primary-container transition-colors duration-300">
+                    Book Appointment
+                </button>
+</div>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow w-full max-w-container-max mx-auto px-gutter py-8">
+<!-- Hero Section -->
+<section class="mb-12 text-center md:text-left flex flex-col md:flex-row items-center gap-8">
+<div class="md:w-1/2">
+<h1 class="font-display-lg text-display-lg text-primary mb-4">Laboratory-Validated Health Products</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">Expertly formulated herbal medicines and supplements. Every product is rigorously tested in our state-of-the-art laboratory to guarantee purity, potency, and safety from heavy metal contamination. Precision medicine meets natural healing.</p>
+<div class="flex items-center gap-4">
+<span class="bg-surface-container-low px-4 py-2 rounded-full font-label-caps text-secondary-container flex items-center gap-2 border border-outline-variant">
+<span class="material-symbols-outlined" data-icon="verified" data-weight="fill" style="font-variation-settings: 'FILL' 1;">verified</span>
+                        Heavy Metal Free
+                    </span>
+<span class="bg-surface-container-low px-4 py-2 rounded-full font-label-caps text-primary flex items-center gap-2 border border-outline-variant">
+<span class="material-symbols-outlined" data-icon="science">science</span>
+                        Lab Tested
+                    </span>
+</div>
+</div>
+<div class="md:w-1/2 w-full h-64 bg-surface-container-highest rounded-xl relative overflow-hidden flex items-center justify-center border border-outline-variant">
+<div class="absolute inset-0 bg-cover bg-center opacity-50" data-alt="A modern clinical laboratory setting with sleek scientific equipment. Glass vials containing pure, potent herbal extracts are meticulously arranged on a pristine white surface. Soft, cool lighting illuminates the scene, emphasizing the Modern Corporate aesthetic. Deep navy accents provide a professional diagnostic feel against the crisp white background." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCRYGhYCtyupo3SEhxNjrNGZJSZhLg0V5G8GcLaL9UoGRFSV-bQgvEvNLsxcGfoDA_YpgPRrcbcxH9lNJgl_DJUoFGcdqVZz29KN6ZoVvBuWTkcee8RAUKIVHtI72Yh49p6h-C1Z3sSx31W5BufUOT5yJObmW1jDYrw0SsMd76ttWlbfj2jOOJgbiJRV_WIIWAF_6YWBUyyoXRGluzIK7MqN2vKw3ui7c_4LKF1wcP478f6RZkY_Pn2T3STDuL1quajV4HN-qhKl58');"></div>
+<div class="z-10 bg-surface/80 backdrop-blur-sm p-4 rounded-lg border border-primary text-center">
+<span class="material-symbols-outlined text-secondary-container text-4xl mb-2 block mx-auto" data-icon="biotech">biotech</span>
+<span class="font-label-caps text-primary">Certified Purity</span>
+</div>
+</div>
+</section>
+<!-- Product Grid -->
+<section class="mb-16">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-8 border-b border-outline-variant pb-2">Clinical Formulations</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Product Card 1: Kidney -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden diagnostic-card flex flex-col hover:shadow-sm transition-shadow duration-300">
+<div class="h-48 bg-surface-container-low relative flex items-center justify-center p-4">
+<div class="w-full h-full bg-cover bg-center rounded" data-alt="A premium pharmaceutical grade amber glass bottle containing herbal supplements. The bottle is cleanly labeled with precise diagnostic typography. It sits on a sterile white background with subtle deep navy and magenta lighting accents, emphasizing its high-quality, clinical nature." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCjFnskHLEYhBMbDhtsYMo2c4ABAPqmpUz1M_efBWMwNC-SVPS4w-yqJzaC_pI0Q_o0k74VX7RfuhlZS9-jLAA0eyO_rRv4DLoJObYLhXp5VZaDuN9ObBqS9B1GkDFdRTf_s2hBiB7gqCpsvZrLxBlv284nRsdP_qaQaKOBUHUpSXfT7hJU4C8d8UofyrhQGj9FxPzfzt6civgu5Mvs1hLglUGGb4eZbKbJOxfoYY0DtEvu9YoJbtLSuL1qemDbrsxa0vbOtKnw6yM');"></div>
+<span class="absolute top-2 right-2 bg-primary text-on-primary px-2 py-1 rounded font-label-caps text-xs">Renal Support</span>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-title-md text-title-md text-primary">NephroClear Extract</h3>
+<span class="font-title-md text-title-md text-secondary-container">$45.00</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 flex-grow">Advanced herbal formulation supporting kidney function and natural detoxification pathways. Standardized for consistent efficacy.</p>
+<div class="space-y-2 mb-6">
+<div class="flex items-center gap-2 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-tertiary-container text-[18px]" data-icon="check_circle">check_circle</span>
+<span>Creatinine Balance</span>
+</div>
+<div class="flex items-center gap-2 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-tertiary-container text-[18px]" data-icon="check_circle">check_circle</span>
+<span>Fluid Regulation</span>
+</div>
+</div>
+<button class="w-full bg-primary hover:bg-primary-container text-on-primary py-3 rounded font-label-caps transition-colors duration-300 flex justify-center items-center gap-2">
+<span>Click to Buy</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="shopping_cart">shopping_cart</span>
+</button>
+</div>
+</div>
+<!-- Product Card 2: Heart -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden diagnostic-card flex flex-col hover:shadow-sm transition-shadow duration-300">
+<div class="h-48 bg-surface-container-low relative flex items-center justify-center p-4">
+<div class="w-full h-full bg-cover bg-center rounded" data-alt="Sleek, clinical white packaging for a cardiovascular supplement. The box features precise, minimalist diagnostic typography and a subtle magenta pathway curve graphic. It rests on an immaculate light gray surface with controlled, high-end studio lighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAytXuW30zlOJFn1yH3XsEKXyPccRRmemNWuGXUErmrAOf2bjVVAfTxmleIF-zSh98vFAWkNLNZVxHYWjYTx0yWWANtkjxNEjQTiVJYQWT5CtiuGOSFSDgxonfl97VdHaRsGnYo44wg2uMpIL2oKkgaLCU7OWK5goHS20dIvV1XBkxM7ALwLTLgIBin1wzDr5U2sVyOZJB3aSYeSZRfWeYh1gXRYQaErRQU2chILa5vRmLXadNaERtJtmxVmWsaYtw9vj4nBqaEcAg');"></div>
+<span class="absolute top-2 right-2 bg-primary text-on-primary px-2 py-1 rounded font-label-caps text-xs">Cardio Health</span>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-title-md text-title-md text-primary">VasoProtect Complex</h3>
+<span class="font-title-md text-title-md text-secondary-container">$52.00</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 flex-grow">Potent botanical blend designed to maintain optimal cardiovascular health, blood pressure levels, and arterial flexibility.</p>
+<div class="space-y-2 mb-6">
+<div class="flex items-center gap-2 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-tertiary-container text-[18px]" data-icon="check_circle">check_circle</span>
+<span>Blood Pressure Support</span>
+</div>
+<div class="flex items-center gap-2 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-tertiary-container text-[18px]" data-icon="check_circle">check_circle</span>
+<span>Circulation Enhance</span>
+</div>
+</div>
+<button class="w-full bg-primary hover:bg-primary-container text-on-primary py-3 rounded font-label-caps transition-colors duration-300 flex justify-center items-center gap-2">
+<span>Click to Buy</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="shopping_cart">shopping_cart</span>
+</button>
+</div>
+</div>
+<!-- Product Card 3: Diabetes -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden diagnostic-card flex flex-col hover:shadow-sm transition-shadow duration-300">
+<div class="h-48 bg-surface-container-low relative flex items-center justify-center p-4">
+<div class="w-full h-full bg-cover bg-center rounded" data-alt="A macro shot of highly purified herbal capsules inside a sterile, clinical glass container. The lighting is bright and diagnostic, highlighting the precision manufacturing. Deep navy and vibrant magenta accents frame the composition, conveying modern medical authority." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCOVoX1Ui0qnt9F7tMTsd3imiMXkABNTSy4K8WsgOXB-rhbCY79kKEJTJeIrGWyRozO2oyFN4ap1ifHVhPiLBJQ6NhmWsLKu7onvL6w-dEQhSWew76u1xRj4oKyeuOD1BQeOXlyeRUXeIRgrUUWiKEpNvlabpO0iYAQqHsyfR2cHHt6PS-RsYZ9_BesoyhtVNxsljGVQi1SBr7AN8N1bnTJzwMrDdK48dnxclsScdpRuZYb_EMkMIDisLyvwSAO6ahyJTh230F77T0');"></div>
+<span class="absolute top-2 right-2 bg-primary text-on-primary px-2 py-1 rounded font-label-caps text-xs">Metabolic</span>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-title-md text-title-md text-primary">GlucoBalance Formula</h3>
+<span class="font-title-md text-title-md text-secondary-container">$38.00</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 flex-grow">Synergistic herbal compounds clinically proven to assist in maintaining healthy blood sugar levels and improving insulin sensitivity.</p>
+<div class="space-y-2 mb-6">
+<div class="flex items-center gap-2 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-tertiary-container text-[18px]" data-icon="check_circle">check_circle</span>
+<span>Glucose Regulation</span>
+</div>
+<div class="flex items-center gap-2 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-tertiary-container text-[18px]" data-icon="check_circle">check_circle</span>
+<span>Metabolic Support</span>
+</div>
+</div>
+<button class="w-full bg-primary hover:bg-primary-container text-on-primary py-3 rounded font-label-caps transition-colors duration-300 flex justify-center items-center gap-2">
+<span>Click to Buy</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="shopping_cart">shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-tertiary w-full mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 px-gutter py-12 max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-1 flex flex-col">
+<span class="font-headline-md text-headline-md text-on-primary mb-4 font-bold">iMED Herbal Clinic</span>
+<p class="font-body-md text-body-md text-surface-variant mb-4">Diagnostic precision meets natural healing. Expert herbal interventions backed by rigorous laboratory validation.</p>
+<span class="font-body-md text-body-md text-surface-variant">© 2024 iMED Herbal Clinic. All rights reserved.</span>
+</div>
+<div class="col-span-1 md:col-span-3 grid grid-cols-2 md:grid-cols-4 gap-8">
+<div>
+<h4 class="font-title-md text-title-md text-on-primary mb-4">Quick Links</h4>
+<ul class="space-y-2">
+<li><a class="font-body-md text-body-md text-surface-variant hover:text-secondary-fixed transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="font-body-md text-body-md text-surface-variant hover:text-secondary-fixed transition-colors" href="#">Terms of Service</a></li>
+<li><a class="font-body-md text-body-md text-surface-variant hover:text-secondary-fixed transition-colors" href="#">FAQ</a></li>
+<li><a class="font-body-md text-body-md text-surface-variant hover:text-secondary-fixed transition-colors" href="#">Locations</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-primary mb-4">Contact</h4>
+<ul class="space-y-2 font-body-md text-body-md text-surface-variant">
+<li>1-800-IMED-CLINIC</li>
+<li>info@imedherbal.com</li>
+<li>123 Clinical Way</li>
+<li>Suite 400</li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

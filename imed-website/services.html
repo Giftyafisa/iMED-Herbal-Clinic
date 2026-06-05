@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Services - iMED Herbal Clinic</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&amp;family=JetBrains+Mono:wght@700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-fill {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary": "#000e04",
+                    "outline-variant": "#c6c5d5",
+                    "on-secondary-fixed-variant": "#8a005f",
+                    "inverse-on-surface": "#f0f1f2",
+                    "on-primary": "#ffffff",
+                    "surface-container-low": "#f3f4f5",
+                    "surface-dim": "#d9dadb",
+                    "on-surface": "#191c1d",
+                    "on-tertiary-fixed": "#00210c",
+                    "surface-container-high": "#e7e8e9",
+                    "primary": "#00003c",
+                    "on-error": "#ffffff",
+                    "on-surface-variant": "#464653",
+                    "outline": "#767684",
+                    "secondary-container": "#fe48b8",
+                    "on-error-container": "#93000a",
+                    "on-tertiary-container": "#009e52",
+                    "primary-container": "#000080",
+                    "surface-container": "#edeeef",
+                    "surface-bright": "#f8f9fa",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-fixed": "#3d0027",
+                    "tertiary-fixed-dim": "#4ae183",
+                    "on-primary-container": "#777eea",
+                    "primary-fixed": "#e0e0ff",
+                    "primary-fixed-dim": "#bfc2ff",
+                    "surface-container-lowest": "#ffffff",
+                    "surface": "#f8f9fa",
+                    "tertiary-fixed": "#6bfe9c",
+                    "surface-container-highest": "#e1e3e4",
+                    "surface-tint": "#4b53bc",
+                    "secondary-fixed-dim": "#ffafd5",
+                    "secondary": "#b4007d",
+                    "background": "#f8f9fa",
+                    "surface-variant": "#e1e3e4",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed-variant": "#3239a3",
+                    "on-secondary": "#ffffff",
+                    "on-secondary-container": "#5a003d",
+                    "on-primary-fixed": "#00006e",
+                    "on-background": "#191c1d",
+                    "inverse-surface": "#2e3132",
+                    "error-container": "#ffdad6",
+                    "tertiary-container": "#002810",
+                    "secondary-fixed": "#ffd8e8",
+                    "on-tertiary-fixed-variant": "#005228",
+                    "inverse-primary": "#bfc2ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "unit": "4px",
+                    "margin-desktop": "64px",
+                    "container-max": "1280px",
+                    "margin-mobile": "16px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "headline-lg-mobile": ["Manrope"],
+                    "body-lg": ["Inter"],
+                    "title-md": ["Manrope"],
+                    "label-caps": ["JetBrains Mono"],
+                    "body-md": ["Inter"],
+                    "headline-lg": ["Manrope"],
+                    "display-lg": ["Manrope"]
+            },
+            "fontSize": {
+                    "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "700" }],
+                    "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                    "title-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                    "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700" }],
+                    "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                    "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                    "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="w-full top-0 sticky z-50 border-b border-transparent transition-all duration-500 bg-surface-container-lowest" id="main-nav">
+<div class="flex justify-between items-center px-gutter py-4 max-w-container-max mx-auto">
+<a class="font-headline-md text-headline-lg-mobile font-bold text-primary flex items-center gap-2 transition-transform hover:scale-105" href="index.html">
+<span class="material-symbols-outlined text-secondary animate-pulse" style="font-variation-settings: 'FILL' 1;">local_pharmacy</span>
+                iMED Herbal Clinic
+            </a>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-secondary transition-colors duration-300 uppercase" href="index.html">Home</a>
+<a class="text-secondary font-bold border-b-2 border-secondary pb-1 font-label-caps text-label-caps hover:text-secondary-fixed transition-colors duration-300 uppercase" href="services.html">Services</a>
+<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-secondary transition-colors duration-300 uppercase" href="products.html">Products</a>
+<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-secondary transition-colors duration-300 uppercase" href="gallery.html">Gallery</a>
+<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-secondary transition-colors duration-300 uppercase" href="about.html">About</a>
+</div>
+<button class="bg-secondary text-on-secondary px-6 py-2 rounded-md font-label-caps text-label-caps hover:bg-secondary-container hover:text-on-secondary-container transition-all duration-300 hidden md:block cursor-pointer active:scale-95 hover:shadow-lg hover:-translate-y-0.5 uppercase">
+                <a href="services.html" class="text-white no-underline">Book Appointment</a>
+            </button>
+<button class="md:hidden text-primary hover:text-secondary transition-colors">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative w-full bg-surface-container-low overflow-hidden">
+<div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(circle at 100% 0%, var(--tw-colors-secondary) 0%, transparent 50%);"></div>
+<div class="max-w-container-max mx-auto px-gutter py-16 md:py-24 grid md:grid-cols-2 gap-12 items-center relative z-10">
+<div class="space-y-6">
+<div class="inline-flex items-center space-x-2 bg-surface-container-lowest border border-outline-variant rounded-full px-4 py-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">science</span>
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">Diagnostic-First Approach</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-primary">
+                        Specialized Clinical Pathways.
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                        Advanced herbal interventions tailored to your precise metabolic and systemic data. We bridge botanical science with rigorous clinical diagnostics.
+                    </p>
+</div>
+<div class="relative h-[400px] rounded-lg overflow-hidden border border-outline-variant">
+<img alt="Clinical environment" class="w-full h-full object-cover grayscale opacity-90 mix-blend-multiply" data-alt="A modern, high-tech clinical environment featuring sleek, sterile white surfaces and subtle, organic curved architectural elements. The lighting is bright, cool, and diagnostic. Accents of deep navy blue and vibrant magenta provide a sense of advanced medical precision and modern healthcare aesthetics. The atmosphere is calm, authoritative, and sophisticated." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJLqtvjE_lBwDi9fYf3qjMfkp6s0CW6U-ttzWtnZ7ZFM1BRL05qz0UE7845W66FgbLkdaKP9B-veHMPCC4w0zFj_zbPw2jQcQscniZWkzU-Ip6gY9Ri7L8ybAAfGufLJoMcWv-VEpBhx1LTsGcB4h7ZTZ_kOCeG34n0SJPHoWyQ-SEad1ygMIyxpF2rkMmJkA1wHHbsgNCFlSEdzEGL_T9cw_OFntOqN4Sz2zJGLc55z3WN8AjStdCeJ_gzp0csl98HKh54JBVk-I"/>
+<div class="absolute inset-0 bg-primary/10 mix-blend-overlay"></div>
+</div>
+</div>
+</section>
+<!-- Mandatory Testing Alert -->
+<section class="max-w-container-max mx-auto px-gutter py-12">
+<div class="bg-surface-container-lowest border-l-4 border-secondary border-t border-r border-b border-outline-variant p-6 rounded-r-lg relative overflow-hidden">
+<div class="absolute -right-12 -top-12 opacity-5">
+<span class="material-symbols-outlined text-[150px] text-primary">warning</span>
+</div>
+<div class="flex items-start space-x-4 relative z-10">
+<div class="w-12 h-12 rounded-full border-2 border-secondary flex items-center justify-center bg-surface flex-shrink-0">
+<span class="material-symbols-outlined text-secondary">biotech</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-primary mb-2">Mandatory Pre-Treatment Diagnostics</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 max-w-3xl">
+                            To ensure clinical safety and precision, all specialized treatment pathways require current comprehensive organ function baseline data.
+                        </p>
+<div class="flex flex-wrap gap-3">
+<span class="inline-flex items-center px-3 py-1 bg-surface-container-low border border-outline-variant rounded font-label-caps text-label-caps text-primary uppercase">
+<span class="material-symbols-outlined text-[16px] mr-1">bloodtype</span> Liver Function Test (LFT)
+                            </span>
+<span class="inline-flex items-center px-3 py-1 bg-surface-container-low border border-outline-variant rounded font-label-caps text-label-caps text-primary uppercase">
+<span class="material-symbols-outlined text-[16px] mr-1">water_drop</span> Renal Function Test (RFT)
+                            </span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Specialized Treatments Bento Grid -->
+<section class="max-w-container-max mx-auto px-gutter py-12">
+<div class="mb-10 flex flex-col md:flex-row md:items-end justify-between border-b border-outline-variant pb-4">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary">Clinical Interventions</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Targeted metabolic and cardiovascular protocols.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- CKD Card -->
+<div class="bg-surface-container-lowest border-l-4 border-secondary border-t border-r border-b border-outline-variant p-8 rounded-r-lg hover:bg-surface-bright transition-colors group">
+<div class="flex justify-between items-start mb-6">
+<div class="w-14 h-14 rounded-full border-2 border-primary flex items-center justify-center bg-surface group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-primary text-[28px]">hide</span>
+</div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest border border-secondary px-2 py-1 rounded">Protocol 01</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mb-3">Chronic Kidney Disease (CKD)</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 min-h-[72px]">
+                        Advanced renal support protocols focusing on slowing progression, managing proteinuria, and stabilizing glomerular filtration rates (eGFR) through targeted botanical pharmacology.
+                    </p>
+<a class="inline-flex items-center font-label-caps text-label-caps text-primary hover:text-secondary transition-colors uppercase group-hover:underline underline-offset-4" href="#">
+                        View Clinical Pathway <span class="material-symbols-outlined ml-1 text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Type 2 Diabetes Card -->
+<div class="bg-surface-container-lowest border-l-4 border-secondary border-t border-r border-b border-outline-variant p-8 rounded-r-lg hover:bg-surface-bright transition-colors group">
+<div class="flex justify-between items-start mb-6">
+<div class="w-14 h-14 rounded-full border-2 border-primary flex items-center justify-center bg-surface group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-primary text-[28px]">monitor_weight</span>
+</div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest border border-secondary px-2 py-1 rounded">Protocol 02</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mb-3">Type 2 Diabetes Mellitus</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 min-h-[72px]">
+                        Comprehensive glycemic control interventions utilizing sensitizing agents to improve insulin resistance, manage HbA1c levels, and mitigate peripheral neuropathy risks.
+                    </p>
+<a class="inline-flex items-center font-label-caps text-label-caps text-primary hover:text-secondary transition-colors uppercase group-hover:underline underline-offset-4" href="#">
+                        View Clinical Pathway <span class="material-symbols-outlined ml-1 text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Hypertension Card -->
+<div class="bg-surface-container-lowest border-l-4 border-secondary border-t border-r border-b border-outline-variant p-8 rounded-r-lg hover:bg-surface-bright transition-colors group">
+<div class="flex justify-between items-start mb-6">
+<div class="w-14 h-14 rounded-full border-2 border-primary flex items-center justify-center bg-surface group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-primary text-[28px]">blood_pressure</span>
+</div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest border border-secondary px-2 py-1 rounded">Protocol 03</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mb-3">Essential Hypertension</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 min-h-[72px]">
+                        Hemodynamic stabilization protocols designed to modulate vascular tone, reduce endothelial inflammation, and maintain optimal systolic/diastolic ratios naturally.
+                    </p>
+<a class="inline-flex items-center font-label-caps text-label-caps text-primary hover:text-secondary transition-colors uppercase group-hover:underline underline-offset-4" href="#">
+                        View Clinical Pathway <span class="material-symbols-outlined ml-1 text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Cardiovascular Care Card -->
+<div class="bg-surface-container-lowest border-l-4 border-secondary border-t border-r border-b border-outline-variant p-8 rounded-r-lg hover:bg-surface-bright transition-colors group">
+<div class="flex justify-between items-start mb-6">
+<div class="w-14 h-14 rounded-full border-2 border-primary flex items-center justify-center bg-surface group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-primary text-[28px]">monitor_heart</span>
+</div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest border border-secondary px-2 py-1 rounded">Protocol 04</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mb-3">Cardiovascular Care</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 min-h-[72px]">
+                        Integrative lipid management and structural heart support to improve ejection fraction, reduce arterial plaque formation, and enhance overall myocardial function.
+                    </p>
+<a class="inline-flex items-center font-label-caps text-label-caps text-primary hover:text-secondary transition-colors uppercase group-hover:underline underline-offset-4" href="#">
+                        View Clinical Pathway <span class="material-symbols-outlined ml-1 text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Booking Section -->
+<section class="bg-surface-container-low py-16 mt-12 border-t border-outline-variant relative overflow-hidden">
+<!-- Organic curve decoration -->
+<div class="absolute -left-32 -top-32 w-96 h-96 border-[1px] border-secondary/20 rounded-full"></div>
+<div class="absolute -right-32 -bottom-32 w-[500px] h-[500px] border-[1px] border-primary/10 rounded-full"></div>
+<div class="max-w-container-max mx-auto px-gutter relative z-10 text-center mb-12">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Initiate Consultation</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">
+                    Select your preferred intake method. Laboratory results must be submitted 48 hours prior to the scheduled consultation for clinical review.
+                </p>
+</div>
+<div class="max-w-4xl mx-auto px-gutter grid md:grid-cols-2 gap-6 relative z-10">
+<!-- Online Consult -->
+<div class="bg-surface-container-lowest border border-outline-variant p-8 text-center flex flex-col items-center hover:border-primary transition-colors group">
+<div class="w-16 h-16 mb-6 rounded-full bg-surface-container-low flex items-center justify-center text-primary group-hover:text-secondary transition-colors">
+<span class="material-symbols-outlined text-[32px]">videocam</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mb-2">Telehealth Consultation</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Secure video diagnostic assessment. Ideal for initial baseline reviews and follow-ups.</p>
+<button class="mt-auto w-full border-2 border-primary text-primary hover:bg-primary hover:text-on-primary font-label-caps text-label-caps uppercase py-3 px-6 transition-colors tracking-widest">
+                        Book Online
+                    </button>
+</div>
+<!-- In-Person Consult -->
+<div class="bg-surface-container-lowest border border-outline-variant p-8 text-center flex flex-col items-center hover:border-primary transition-colors group relative">
+<div class="absolute top-0 left-0 w-full h-1 bg-secondary"></div>
+<div class="w-16 h-16 mb-6 rounded-full bg-surface-container-low flex items-center justify-center text-primary group-hover:text-secondary transition-colors">
+<span class="material-symbols-outlined text-[32px]">domain</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mb-2">In-Clinic Assessment</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Comprehensive physical examination and immediate laboratory specimen collection on-site.</p>
+<button class="mt-auto w-full bg-primary text-on-primary hover:bg-primary-container font-label-caps text-label-caps uppercase py-3 px-6 transition-colors tracking-widest">
+                        Book In-Person
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary w-full text-on-primary border-t-4 border-secondary">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 px-gutter py-16 max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="font-headline-lg-mobile text-headline-lg-mobile text-on-primary mb-4">iMED Herbal Clinic</div>
+<p class="font-body-md text-body-md text-surface-variant opacity-80">Precision diagnostics meeting advanced botanical pharmacology.</p>
+</div>
+<div class="col-span-1">
+<h4 class="font-label-caps text-label-caps uppercase tracking-widest text-surface-variant mb-4">Navigation</h4>
+<ul class="space-y-3">
+<li><a class="font-body-md text-body-md text-surface-variant hover:text-secondary-fixed transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="font-body-md text-body-md text-surface-variant hover:text-secondary-fixed transition-colors" href="#">Terms of Service</a></li>
+<li><a class="font-body-md text-body-md text-surface-variant hover:text-secondary-fixed transition-colors" href="#">FAQ</a></li>
+<li><a class="font-body-md text-body-md text-surface-variant hover:text-secondary-fixed transition-colors" href="#">Locations</a></li>
+</ul>
+</div>
+<div class="col-span-1 md:col-span-2 flex flex-col justify-between">
+<div>
+<h4 class="font-label-caps text-label-caps uppercase tracking-widest text-surface-variant mb-4">Clinical Support</h4>
+<p class="font-body-md text-body-md text-surface-variant">Emergency: Dial your local emergency services.</p>
+<p class="font-body-md text-body-md text-surface-variant mt-2">Clinic Direct: +1 (800) CLINIC-RX</p>
+</div>
+<div class="mt-8 md:mt-0 font-body-md text-body-md text-surface-variant opacity-70 border-t border-outline/30 pt-4">
+                    © 2024 iMED Herbal Clinic. All rights reserved.
+                </div>
+</div>
+</div>
+</footer>
+</body></html>
